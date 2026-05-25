@@ -16,7 +16,7 @@ $files = @(
   "projects-data.js"
 )
 
-$remote = "$User@$Server:$DeployPath/"
+$remote = "${User}@${Server}:${DeployPath}/"
 
 Write-Host "Deploying to $remote" -ForegroundColor Cyan
 
@@ -40,4 +40,3 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Deploy complete." -ForegroundColor Green
-
