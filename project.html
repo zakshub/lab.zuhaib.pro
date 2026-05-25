@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <title>Lab Project | Zuhaib Akram</title>
+    <meta name="description" content="Project detail page for lab.zuhaib.pro" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="project-page">
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">Z</span>
+          <span>
+            <strong>Zuhaib Lab</strong>
+            <small>lab.zuhaib.pro</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#system">System</a>
+          <a href="./index.html#plan">Plan</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-shell">
+      <section class="project-hero">
+        <div class="wrap project-hero-grid">
+          <div class="project-hero-copy">
+            <p class="eyebrow" id="project-category">Loading category...</p>
+            <h1 id="project-title">Loading project...</h1>
+            <p class="lede" id="project-summary"></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./index.html#work">Back to lab</a>
+              <a class="btn btn-secondary" href="#details">Scroll details</a>
+            </div>
+          </div>
+
+          <aside class="project-hero-panel">
+            <div class="panel-head">
+              <span class="panel-pill" id="project-status">Status</span>
+              <span class="panel-status">Detail page</span>
+            </div>
+            <div class="panel-stack">
+              <article class="stat-card">
+                <span>Problem</span>
+                <strong id="project-problem-title">Problem-led design</strong>
+                <p id="project-problem"></p>
+              </article>
+              <article class="stat-card">
+                <span>Insight</span>
+                <strong>Why this matters</strong>
+                <p id="project-insight"></p>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="details">
+        <div class="wrap project-detail-grid">
+          <article class="detail-card">
+            <p class="kicker">Solution</p>
+            <h2>What the product does</h2>
+            <p id="project-solution"></p>
+          </article>
+
+          <article class="detail-card">
+            <p class="kicker">Outcome</p>
+            <h2>Why it exists</h2>
+            <p id="project-outcome"></p>
+          </article>
+
+          <article class="detail-card">
+            <p class="kicker">Design notes</p>
+            <h2>Visual direction</h2>
+            <ul id="project-design-notes"></ul>
+          </article>
+
+          <article class="detail-card">
+            <p class="kicker">Deliverables</p>
+            <h2>What gets built</h2>
+            <ul id="project-deliverables"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap cta-block">
+          <div>
+            <p class="kicker">Next move</p>
+            <h2>Turn this into a live showcase page.</h2>
+            <p class="section-copy">
+              The next step is to convert this narrative into a fully designed
+              launch page with its own motion, visuals, and interactive proof.
+            </p>
+          </div>
+          <div class="cta-box">
+            <p>Current phase</p>
+            <strong>Story structure first, visuals second, automation later.</strong>
+            <span>Every project should stay problem-led and easy to explain.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./projects-data.js"></script>
+    <script src="./project.js"></script>
+  </body>
+</html>
