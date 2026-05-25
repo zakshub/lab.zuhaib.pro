@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="700" viewBox="0 0 1120 700" role="img" aria-labelledby="title desc">
+  <title id="title">Pro React Exporter UI reference</title>
+  <desc id="desc">High fidelity interface reference for exporting generated code into a React project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#16110a"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1120" height="700" fill="url(#bg)"/>
+  <rect x="64" y="58" width="992" height="584" rx="30" fill="#0f141d" stroke="#2a2f3b"/>
+  <rect x="64" y="58" width="992" height="68" rx="30" fill="#151b26"/>
+  <text x="96" y="101" fill="#fff7ed" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="900">Pro React Exporter</text>
+  <text x="328" y="101" fill="#9ca3af" font-size="14" font-family="Inter, Arial, sans-serif">AI code to runnable project</text>
+  <rect x="888" y="80" width="120" height="28" rx="14" fill="url(#accent)"/>
+  <text x="918" y="99" fill="#1f1300" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="900">Export ZIP</text>
+  <rect x="94" y="158" width="326" height="420" rx="20" fill="#111827" stroke="#273244"/>
+  <text x="124" y="196" fill="#e5e7eb" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="800">Generated input</text>
+  <rect x="124" y="224" width="246" height="13" rx="6" fill="#f59e0b"/>
+  <rect x="124" y="254" width="214" height="13" rx="6" fill="#475569"/>
+  <rect x="124" y="284" width="254" height="13" rx="6" fill="#475569"/>
+  <rect x="124" y="314" width="178" height="13" rx="6" fill="#475569"/>
+  <rect x="124" y="372" width="246" height="84" rx="18" fill="#1f2937"/>
+  <text x="148" y="404" fill="#fbbf24" font-size="13" font-family="IBM Plex Mono, monospace">component.jsx</text>
+  <text x="148" y="430" fill="#cbd5e1" font-size="13" font-family="IBM Plex Mono, monospace">imports need cleanup</text>
+  <rect x="458" y="158" width="204" height="420" rx="20" fill="#fff7ed"/>
+  <text x="488" y="196" fill="#431407" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="900">Structure map</text>
+  <rect x="488" y="232" width="126" height="34" rx="12" fill="#fed7aa"/>
+  <text x="510" y="254" fill="#7c2d12" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="800">src/App.jsx</text>
+  <rect x="488" y="286" width="144" height="34" rx="12" fill="#fde68a"/>
+  <text x="510" y="308" fill="#78350f" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="800">components</text>
+  <rect x="488" y="340" width="112" height="34" rx="12" fill="#ffedd5"/>
+  <text x="510" y="362" fill="#7c2d12" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="800">styles</text>
+  <rect x="488" y="448" width="128" height="44" rx="16" fill="url(#accent)"/>
+  <text x="524" y="476" fill="#1f1300" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="900">Build</text>
+  <rect x="700" y="158" width="326" height="420" rx="20" fill="#111827" stroke="#273244"/>
+  <text x="730" y="196" fill="#e5e7eb" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="800">Clean output</text>
+  <rect x="730" y="232" width="246" height="66" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="754" y="272" fill="#fdba74" font-size="14" font-family="Inter, Arial, sans-serif" font-weight="800">Vite + React ready</text>
+  <rect x="730" y="326" width="246" height="66" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="754" y="366" fill="#fdba74" font-size="14" font-family="Inter, Arial, sans-serif" font-weight="800">Reusable file tree</text>
+  <rect x="730" y="420" width="246" height="66" rx="16" fill="#172033" stroke="#334155"/>
+  <text x="754" y="460" fill="#fdba74" font-size="14" font-family="Inter, Arial, sans-serif" font-weight="800">Deployable package</text>
+</svg>

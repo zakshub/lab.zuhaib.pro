@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="700" viewBox="0 0 1120 700" role="img" aria-labelledby="title desc">
+  <title id="title">FashionOS UI reference</title>
+  <desc id="desc">High fidelity interface reference for fashion collection and campaign generation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f1022"/>
+      <stop offset="1" stop-color="#151018"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#e879f9"/>
+      <stop offset="1" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1120" height="700" fill="url(#bg)"/>
+  <rect x="58" y="54" width="1004" height="592" rx="32" fill="#120d16" stroke="#3a253f"/>
+  <text x="94" y="104" fill="#fdf4ff" font-size="26" font-family="Inter, Arial, sans-serif" font-weight="900">FashionOS</text>
+  <text x="258" y="104" fill="#d8b4fe" font-size="14" font-family="Inter, Arial, sans-serif">Collection studio</text>
+  <rect x="880" y="76" width="130" height="34" rx="17" fill="url(#accent)"/>
+  <text x="916" y="98" fill="#2a0715" font-size="12" font-family="Inter, Arial, sans-serif" font-weight="900">Launch pack</text>
+  <rect x="94" y="148" width="262" height="452" rx="24" fill="#1b1322" stroke="#41244a"/>
+  <text x="126" y="190" fill="#f5d0fe" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="900">Brand sensing</text>
+  <rect x="126" y="226" width="88" height="120" rx="22" fill="#fce7f3"/>
+  <rect x="226" y="226" width="88" height="120" rx="22" fill="#ffe4e6"/>
+  <rect x="126" y="366" width="188" height="16" rx="8" fill="#e879f9"/>
+  <rect x="126" y="398" width="144" height="16" rx="8" fill="#61406b"/>
+  <rect x="126" y="430" width="170" height="16" rx="8" fill="#61406b"/>
+  <rect x="392" y="148" width="338" height="452" rx="24" fill="#faf5ff"/>
+  <text x="426" y="190" fill="#3b0764" font-size="20" font-family="Inter, Arial, sans-serif" font-weight="900">Collection board</text>
+  <rect x="426" y="228" width="116" height="154" rx="24" fill="#fbcfe8"/>
+  <rect x="562" y="228" width="116" height="154" rx="24" fill="#f5d0fe"/>
+  <rect x="426" y="410" width="252" height="56" rx="18" fill="#f3e8ff"/>
+  <text x="454" y="444" fill="#701a75" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="900">Embroidery direction</text>
+  <rect x="426" y="492" width="252" height="54" rx="18" fill="url(#accent)"/>
+  <text x="496" y="526" fill="#2a0715" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="900">Generate looks</text>
+  <rect x="766" y="148" width="260" height="452" rx="24" fill="#1b1322" stroke="#41244a"/>
+  <text x="798" y="190" fill="#f5d0fe" font-size="18" font-family="Inter, Arial, sans-serif" font-weight="900">Campaign director</text>
+  <rect x="798" y="226" width="174" height="76" rx="18" fill="#2a1833"/>
+  <text x="822" y="270" fill="#f0abfc" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="800">Editorial story</text>
+  <rect x="798" y="326" width="174" height="76" rx="18" fill="#2a1833"/>
+  <text x="822" y="370" fill="#f0abfc" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="800">Shot direction</text>
+  <rect x="798" y="426" width="174" height="76" rx="18" fill="#2a1833"/>
+  <text x="822" y="470" fill="#f0abfc" font-size="13" font-family="Inter, Arial, sans-serif" font-weight="800">Social pack</text>
+</svg>

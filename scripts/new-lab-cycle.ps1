@@ -81,9 +81,10 @@ $buildPlan = @"
 
 1. Turn the problem into a short brief.
 2. Draft the page structure and copy.
-3. Shape the visual direction.
-4. Review the artifact.
-5. Push only after approval.
+3. Generate at least one high-fidelity UI reference.
+4. Shape the visual direction.
+5. Review the artifact.
+6. Push only after approval.
 "@
 
 $review = @"
@@ -92,6 +93,7 @@ $review = @"
 - Is the problem real?
 - Is the user specific enough?
 - Is the output useful?
+- Is there a high-fidelity UI reference?
 - Does it fit the lab's standard?
 - Is it ready for lab.zuhaib.pro only?
 "@
