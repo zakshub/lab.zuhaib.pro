@@ -32,8 +32,10 @@ const setHtml = (selector, value) => {
 const buildHeroPreview = () => {
   const accent = project.theme?.accent || "#8b5cf6";
   const accent2 = project.theme?.accent2 || "#3b82f6";
+  const glowA = project.theme?.glow || "rgba(139, 92, 246, 0.22)";
+  const glowB = project.theme?.panel || "rgba(139, 92, 246, 0.10)";
   return `
-    <div class="project-preview" style="--project-preview-a:${accent}; --project-preview-b:${accent2};">
+    <div class="project-preview" style="--project-preview-a:${accent}; --project-preview-b:${accent2}; --project-preview-glow-a:${glowA}; --project-preview-glow-b:${glowB};">
       <div class="project-preview-top">
         <span>${escapeHtml(project.track)}</span>
         <span>${escapeHtml(project.status)}</span>

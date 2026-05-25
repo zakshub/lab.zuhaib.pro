@@ -22,7 +22,7 @@ const buildPreview = (project) => {
 
   if (project.track === "Develop") {
     return `
-      <div class="preview preview-develop" style="--preview-a:${accent}; --preview-b:${accent2};">
+      <div class="preview preview-develop" style="--preview-a:${accent}; --preview-b:${accent2}; --preview-glow-a:${glow}; --preview-glow-b:${panel};">
         <div class="preview-top">
           <span>import.jsx</span>
           <span>Vite + React</span>
@@ -37,7 +37,7 @@ const buildPreview = (project) => {
 
   if (project.track === "Create") {
     return `
-      <div class="preview preview-create" style="--preview-a:${accent}; --preview-b:${accent2};">
+      <div class="preview preview-create" style="--preview-a:${accent}; --preview-b:${accent2}; --preview-glow-a:${glow}; --preview-glow-b:${panel};">
         <div class="preview-tiles">
           <span></span><span></span><span></span><span></span>
         </div>
@@ -48,7 +48,7 @@ const buildPreview = (project) => {
 
   if (project.track === "Learn") {
     return `
-      <div class="preview preview-learn" style="--preview-a:${accent}; --preview-b:${accent2};">
+      <div class="preview preview-learn" style="--preview-a:${accent}; --preview-b:${accent2}; --preview-glow-a:${glow}; --preview-glow-b:${panel};">
         <div class="preview-chat">
           <div class="bubble left"></div>
           <div class="bubble right"></div>
@@ -61,7 +61,7 @@ const buildPreview = (project) => {
 
   if (project.track === "Play") {
     return `
-      <div class="preview preview-play" style="--preview-a:${accent}; --preview-b:${accent2};">
+      <div class="preview preview-play" style="--preview-a:${accent}; --preview-b:${accent2}; --preview-glow-a:${glow}; --preview-glow-b:${panel};">
         <div class="preview-track"></div>
         <div class="preview-orbit"></div>
         <div class="preview-foot">motion test</div>
@@ -70,7 +70,7 @@ const buildPreview = (project) => {
   }
 
   return `
-    <div class="preview preview-explore" style="--preview-a:${accent}; --preview-b:${accent2};">
+    <div class="preview preview-explore" style="--preview-a:${accent}; --preview-b:${accent2}; --preview-glow-a:${glow}; --preview-glow-b:${panel};">
       <div class="preview-grid">
         <span></span><span></span><span></span><span></span>
       </div>
