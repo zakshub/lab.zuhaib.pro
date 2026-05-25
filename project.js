@@ -118,6 +118,7 @@ setText("#project-status-pill", project.status);
 setText("#project-category", project.category);
 setText("#project-action-label", project.actionLabel);
 setText("#project-action-note", project.actionNote);
+setText("#project-overview-copy", `${project.problem} ${project.insight}`);
 setText("#project-access-note", `${project.status} • ${project.actionNote}`);
 setText("#project-journey-note", project.journey.join(" • "));
 setText("#project-access-copy", `${project.title} is structured as a ${project.track.toLowerCase()} experiment. The journey is: ${project.journey[0].toLowerCase()} → ${project.journey[1].toLowerCase()} → ${project.journey[2].toLowerCase()} → ${project.journey[3].toLowerCase()}.`);

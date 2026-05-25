@@ -88,8 +88,12 @@ const buildCard = (project, variant = "experiment") => {
   const status = escapeHtml(project.status);
   const action = escapeHtml(project.actionLabel || "Learn more");
   const note = escapeHtml(project.actionNote || "");
+  const accent = project.theme?.accent || "#8b5cf6";
+  const accent2 = project.theme?.accent2 || "#3b82f6";
+  const glow = project.theme?.glow || "rgba(139, 92, 246, 0.22)";
+  const panel = project.theme?.panel || "rgba(139, 92, 246, 0.10)";
   return `
-    <article class="lab-card lab-card--${variant} track-${project.track.toLowerCase()}" data-track="${track}">
+    <article class="lab-card lab-card--${variant} track-${project.track.toLowerCase()}" data-track="${track}" style="--card-accent:${accent}; --card-accent-2:${accent2}; --card-glow:${glow}; --card-panel:${panel};">
       <a class="lab-card-link" href="${href}">
         <div class="lab-card-visual">
           <div class="lab-card-topline">
