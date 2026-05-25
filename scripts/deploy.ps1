@@ -33,6 +33,15 @@ foreach ($file in $files) {
   }
 }
 
+Write-Host "Copying assets..." -ForegroundColor Gray
+$assetsSource = Join-Path $repoRoot "assets"
+if (Test-Path $assetsSource) {
+  & scp -o BatchMode=yes -r $assetsSource $remote
+  if ($LASTEXITCODE -ne 0) {
+    throw "Failed to copy assets"
+  }
+}
+
 Write-Host "Fixing ownership and confirming files on the VPS..." -ForegroundColor Cyan
 & ssh -o BatchMode=yes "$User@$Server" "chown -R www-data:www-data '$DeployPath' && ls -la '$DeployPath'"
 if ($LASTEXITCODE -ne 0) {

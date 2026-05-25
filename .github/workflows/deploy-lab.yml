@@ -43,6 +43,7 @@ jobs:
             project.html \
             project.js \
             projects-data.js \
+            assets \
             "$LAB_VPS_USER@${{ secrets.LAB_VPS_HOST }}:$LAB_DEPLOY_PATH/"
 
       - name: Confirm deployment

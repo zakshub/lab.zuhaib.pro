@@ -29,6 +29,7 @@ Server access:
 - `project.html`
 - `project.js`
 - `projects-data.js`
+- `assets/`
 
 ## Local deploy helper
 

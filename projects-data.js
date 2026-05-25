@@ -31,13 +31,13 @@ window.LAB_PROJECTS = {
       {
         title: "Clinician review workbench",
         note: "Primary screen for reviewing AI-generated notes, risk flags, and final sign-off.",
-        image: "./assets/ui/scribecheck-review-workbench.svg",
+        image: "./assets/ui/scribecheck-review-workbench.png",
         alt: "ScribeCheck Review clinician workbench UI mockup",
       },
       {
         title: "Medication risk detail",
         note: "Focused review state for uncertain clinical statements before approval.",
-        image: "./assets/ui/scribecheck-review-risk-detail.svg",
+        image: "./assets/ui/scribecheck-review-risk-detail.png",
         alt: "ScribeCheck Review medication risk detail UI mockup",
       },
     ],
@@ -104,7 +104,7 @@ window.LAB_PROJECTS = {
       {
         title: "Exporter workbench",
         note: "High-fidelity reference for the core input-to-export workflow.",
-        image: "./assets/ui/pro-react-exporter-ui.svg",
+        image: "./assets/ui/pro-react-exporter-ui.png",
         alt: "Pro React Exporter workbench UI mockup",
       },
     ],
@@ -171,7 +171,7 @@ window.LAB_PROJECTS = {
       {
         title: "Collection studio",
         note: "High-fidelity screen direction for a unified fashion AI workflow.",
-        image: "./assets/ui/fashionos-ui.svg",
+        image: "./assets/ui/fashionos-ui.png",
         alt: "FashionOS collection studio UI mockup",
       },
     ],
@@ -238,7 +238,7 @@ window.LAB_PROJECTS = {
       {
         title: "Reflection workspace",
         note: "High-fidelity reference for framing a boundary before drafting a response.",
-        image: "./assets/ui/boundary-guard-ui.svg",
+        image: "./assets/ui/boundary-guard-ui.png",
         alt: "Boundary Guard reflection workspace UI mockup",
       },
     ],
@@ -305,7 +305,7 @@ window.LAB_PROJECTS = {
       {
         title: "Playable game screen",
         note: "High-fidelity game UI direction for browser and mobile-ready play.",
-        image: "./assets/ui/dino-rush-ui.svg",
+        image: "./assets/ui/dino-rush-ui.png",
         alt: "DinoRush playable game screen UI mockup",
       },
     ],
@@ -372,7 +372,7 @@ window.LAB_PROJECTS = {
       {
         title: "Comic publishing desk",
         note: "High-fidelity reference for generated panels, story control, and publishing cadence.",
-        image: "./assets/ui/ai-comics-ui.svg",
+        image: "./assets/ui/ai-comics-ui.png",
         alt: "AI Comics publishing desk UI mockup",
       },
     ],
@@ -439,7 +439,7 @@ window.LAB_PROJECTS = {
       {
         title: "Problem selection board",
         note: "High-fidelity reference for the monthly concept intake and scoring workflow.",
-        image: "./assets/ui/new-concept-ui.svg",
+        image: "./assets/ui/new-concept-ui.png",
         alt: "New Monthly Concept selection board UI mockup",
       },
     ],
