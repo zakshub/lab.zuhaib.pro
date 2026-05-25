@@ -54,5 +54,17 @@ This folder describes how the lab's AI-assisted work runs.
 - research notes
 - decision log
 - build plan
+- high-fidelity visual reference
 - review pack
 - publish-ready summary
+
+## Visual reference rule
+
+Every future experiment must include at least one high-fidelity UI reference before it is review-ready.
+
+The visual reference should show the expected product screen, not only an abstract moodboard. It must answer:
+
+- what the product looks like
+- what the user sees first
+- what the main workflow feels like
+- what will appear on `lab.zuhaib.pro` after approval

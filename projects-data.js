@@ -25,6 +25,22 @@ window.LAB_PROJECTS = {
       "A lightweight review queue that flags uncertain sections, separates clinical facts from inferred summaries, and turns note approval into a focused checklist.",
     outcome:
       "A safer, faster path from AI-generated draft to clinician-finalized documentation without hiding responsibility behind automation.",
+    visualNote:
+      "Two production-facing screens show the review workbench and the medication/treatment risk detail state.",
+    visuals: [
+      {
+        title: "Clinician review workbench",
+        note: "Primary screen for reviewing AI-generated notes, risk flags, and final sign-off.",
+        image: "./assets/ui/scribecheck-review-workbench.svg",
+        alt: "ScribeCheck Review clinician workbench UI mockup",
+      },
+      {
+        title: "Medication risk detail",
+        note: "Focused review state for uncertain clinical statements before approval.",
+        image: "./assets/ui/scribecheck-review-risk-detail.svg",
+        alt: "ScribeCheck Review medication risk detail UI mockup",
+      },
+    ],
     journey: [
       "Open the AI-generated note.",
       "Scan risk flags by section.",
@@ -82,6 +98,16 @@ window.LAB_PROJECTS = {
       "A browser-based workflow that exports, cleans, and packages generated code into a structured Vite + React project.",
     outcome:
       "A sharper handoff from AI output to working front-end code, with less time wasted on cleanup.",
+    visualNote:
+      "A production-ready exporter workspace showing messy input, structure mapping, and clean output.",
+    visuals: [
+      {
+        title: "Exporter workbench",
+        note: "High-fidelity reference for the core input-to-export workflow.",
+        image: "./assets/ui/pro-react-exporter-ui.svg",
+        alt: "Pro React Exporter workbench UI mockup",
+      },
+    ],
     journey: [
       "Drop in generated code.",
       "Normalize structure and imports.",
@@ -139,6 +165,16 @@ window.LAB_PROJECTS = {
       "A modular product that combines line planning, embroidery concepting, brand sensing, and campaign direction in one place.",
     outcome:
       "Faster creative alignment between designers, brand teams, and production stakeholders.",
+    visualNote:
+      "A fashion collection studio reference showing brand sensing, collection planning, and campaign direction.",
+    visuals: [
+      {
+        title: "Collection studio",
+        note: "High-fidelity screen direction for a unified fashion AI workflow.",
+        image: "./assets/ui/fashionos-ui.svg",
+        alt: "FashionOS collection studio UI mockup",
+      },
+    ],
     journey: [
       "Plan the collection direction.",
       "Generate embroidery intelligence.",
@@ -196,6 +232,16 @@ window.LAB_PROJECTS = {
       "A reflective, guided experience that helps users name the issue, compare options, and prepare a response.",
     outcome:
       "More deliberate communication and less emotional blur when difficult conversations happen.",
+    visualNote:
+      "A calm, non-diagnostic support flow for turning emotional tension into a considered response.",
+    visuals: [
+      {
+        title: "Reflection workspace",
+        note: "High-fidelity reference for framing a boundary before drafting a response.",
+        image: "./assets/ui/boundary-guard-ui.svg",
+        alt: "Boundary Guard reflection workspace UI mockup",
+      },
+    ],
     journey: [
       "Pause and name the tension.",
       "Structure the conversation.",
@@ -253,6 +299,16 @@ window.LAB_PROJECTS = {
       "A browser-first game concept with a sharper visual identity and a mobile-friendly experience.",
     outcome:
       "A playful product that still demonstrates front-end discipline.",
+    visualNote:
+      "A game screen reference showing the first playable state, score area, and mobile-ready control direction.",
+    visuals: [
+      {
+        title: "Playable game screen",
+        note: "High-fidelity game UI direction for browser and mobile-ready play.",
+        image: "./assets/ui/dino-rush-ui.svg",
+        alt: "DinoRush playable game screen UI mockup",
+      },
+    ],
     journey: [
       "Open the game.",
       "Test the controls.",
@@ -310,6 +366,16 @@ window.LAB_PROJECTS = {
       "A structured comic publishing experiment that pairs generation with story direction and editorial cadence.",
     outcome:
       "A repeatable storytelling medium that can be expanded over time.",
+    visualNote:
+      "A publishing desk reference for panel rhythm, story control, and daily comic release flow.",
+    visuals: [
+      {
+        title: "Comic publishing desk",
+        note: "High-fidelity reference for generated panels, story control, and publishing cadence.",
+        image: "./assets/ui/ai-comics-ui.svg",
+        alt: "AI Comics publishing desk UI mockup",
+      },
+    ],
     journey: [
       "Generate the page.",
       "Refine the narrative flow.",
@@ -367,6 +433,16 @@ window.LAB_PROJECTS = {
       "A problem-led selection process that starts with research and ends with a shippable artifact.",
     outcome:
       "The lab stays relevant, credible, and useful.",
+    visualNote:
+      "A concept selection board for moving from raw signal to review-ready build plan.",
+    visuals: [
+      {
+        title: "Problem selection board",
+        note: "High-fidelity reference for the monthly concept intake and scoring workflow.",
+        image: "./assets/ui/new-concept-ui.svg",
+        alt: "New Monthly Concept selection board UI mockup",
+      },
+    ],
     journey: [
       "Start with real signal.",
       "Shape the problem around a specific user.",

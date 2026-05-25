@@ -76,6 +76,19 @@ const renderCapabilityCard = (item, index) => `
   </article>
 `;
 
+const renderVisualReferenceCard = (item, index) => `
+  <article class="visual-reference-card">
+    <figure class="visual-reference-media">
+      <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.alt || item.title)}" loading="lazy" />
+    </figure>
+    <div class="visual-reference-copy">
+      <span class="index">${String(index + 1).padStart(2, "0")}</span>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.note)}</p>
+    </div>
+  </article>
+`;
+
 const renderGalleryCard = (item, index) => `
   <article class="gallery-card">
     <div class="gallery-visual">
@@ -106,7 +119,7 @@ const renderRelatedCard = (item) => `
       <p>${escapeHtml(item.summary)}</p>
       <div class="related-card-foot">
         <span>${escapeHtml(item.actionLabel || "Learn more")}</span>
-        <span>→</span>
+        <span>&rarr;</span>
       </div>
     </a>
   </article>
@@ -121,9 +134,10 @@ setText("#project-category", project.category);
 setText("#project-action-label", project.actionLabel);
 setText("#project-action-note", project.actionNote);
 setText("#project-overview-copy", `${project.problem} ${project.insight}`);
-setText("#project-access-note", `${project.status} • ${project.actionNote}`);
-setText("#project-journey-note", project.journey.join(" • "));
-setText("#project-access-copy", `${project.title} is structured as a ${project.track.toLowerCase()} experiment. The journey is: ${project.journey[0].toLowerCase()} → ${project.journey[1].toLowerCase()} → ${project.journey[2].toLowerCase()} → ${project.journey[3].toLowerCase()}.`);
+setText("#project-visuals-copy", project.visualNote || "Client-style screens that show what the product could become before the build moves deeper.");
+setText("#project-access-note", `${project.status} / ${project.actionNote}`);
+setText("#project-journey-note", project.journey.join(" / "));
+setText("#project-access-copy", `${project.title} is structured as a ${project.track.toLowerCase()} experiment. The journey is: ${project.journey[0].toLowerCase()} to ${project.journey[1].toLowerCase()} to ${project.journey[2].toLowerCase()} to ${project.journey[3].toLowerCase()}.`);
 
 const titleEl = document.querySelector("title");
 if (titleEl) titleEl.textContent = `${project.title} | Zuhaib Lab`;
@@ -162,6 +176,19 @@ renderCards(
   "capabilities-grid--ready",
   renderCapabilityCard
 );
+
+const visualSection = document.getElementById("visuals");
+const visuals = project.visuals || [];
+if (visuals.length) {
+  renderCards(
+    "#visual-reference-grid",
+    visuals,
+    "visual-reference-grid--ready",
+    renderVisualReferenceCard
+  );
+} else if (visualSection) {
+  visualSection.hidden = true;
+}
 
 renderCards(
   "#gallery-grid",
