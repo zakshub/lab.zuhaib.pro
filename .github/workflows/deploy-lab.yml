@@ -1,0 +1,51 @@
+name: Deploy lab.zuhaib.pro
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy approved main branch
+    runs-on: ubuntu-latest
+    env:
+      LAB_DEPLOY_PATH: ${{ secrets.LAB_VPS_DEPLOY_PATH || '/var/www/lab.zuhaib.pro' }}
+      LAB_VPS_USER: ${{ secrets.LAB_VPS_USER || 'root' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate static scripts
+        run: |
+          node --check app.js
+          node --check project.js
+          node --check projects-data.js
+
+      - name: Configure SSH
+        run: |
+          test -n "${{ secrets.LAB_VPS_HOST }}"
+          test -n "${{ secrets.LAB_VPS_SSH_KEY }}"
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.LAB_VPS_SSH_KEY }}" > ~/.ssh/lab_deploy_key
+          chmod 600 ~/.ssh/lab_deploy_key
+          ssh-keyscan -H "${{ secrets.LAB_VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Upload lab files
+        run: |
+          scp -i ~/.ssh/lab_deploy_key \
+            index.html \
+            styles.css \
+            app.js \
+            project.html \
+            project.js \
+            projects-data.js \
+            "$LAB_VPS_USER@${{ secrets.LAB_VPS_HOST }}:$LAB_DEPLOY_PATH/"
+
+      - name: Confirm deployment
+        run: |
+          ssh -i ~/.ssh/lab_deploy_key "$LAB_VPS_USER@${{ secrets.LAB_VPS_HOST }}" \
+            "chown -R www-data:www-data '$LAB_DEPLOY_PATH' && ls -la '$LAB_DEPLOY_PATH'"

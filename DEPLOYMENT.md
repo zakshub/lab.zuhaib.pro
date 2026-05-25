@@ -43,4 +43,23 @@ The script copies only the site files to `/var/www/lab.zuhaib.pro`.
 ## Safety rule
 
 Do not deploy anywhere else.
+## GitHub Actions auto-deploy
 
+The repo now includes `.github/workflows/deploy-lab.yml`.
+
+It deploys only when approved changes land on `main`.
+
+Required GitHub repository secrets:
+
+- `LAB_VPS_HOST`: VPS host, for example `187.77.207.96`
+- `LAB_VPS_USER`: SSH user, usually `root`
+- `LAB_VPS_SSH_KEY`: private SSH key allowed to write to the deploy path
+- `LAB_VPS_DEPLOY_PATH`: optional, defaults to `/var/www/lab.zuhaib.pro`
+
+Approval flow:
+
+1. AI opens a PR.
+2. Zuhaib reviews and merges the PR.
+3. GitHub Actions deploys the approved `main` branch to `lab.zuhaib.pro`.
+
+Do not add secrets to source code.
