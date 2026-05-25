@@ -1,4 +1,61 @@
 window.LAB_PROJECTS = {
+  "scribecheck-review": {
+    slug: "scribecheck-review",
+    title: "ScribeCheck Review",
+    status: "Draft PR",
+    track: "Learn",
+    category: "Healthcare UX",
+    featured: true,
+    featuredRank: 0.5,
+    actionLabel: "Review concept",
+    actionNote: "Autonomous sample cycle",
+    theme: {
+      accent: "#22C55E",
+      accent2: "#0EA5E9",
+      glow: "rgba(34, 197, 94, 0.20)",
+      panel: "rgba(14, 165, 233, 0.10)",
+    },
+    summary:
+      "A clinician review layer for AI-generated notes, focused on trust, missing context, and fast sign-off.",
+    problem:
+      "Ambient AI scribes can reduce documentation burden, but clinicians still need a fast way to review uncertain notes before signing them.",
+    insight:
+      "The product opportunity is not another scribe. It is the review experience after the scribe: uncertainty, medication/treatment checks, and note structure that respects clinician judgment.",
+    solution:
+      "A lightweight review queue that flags uncertain sections, separates clinical facts from inferred summaries, and turns note approval into a focused checklist.",
+    outcome:
+      "A safer, faster path from AI-generated draft to clinician-finalized documentation without hiding responsibility behind automation.",
+    journey: [
+      "Open the AI-generated note.",
+      "Scan risk flags by section.",
+      "Review medication and treatment mentions.",
+      "Approve, edit, or send back for clarification.",
+    ],
+    capabilities: [
+      {
+        title: "Uncertainty map",
+        note: "Highlights the sections that need clinician attention first instead of treating the whole note equally.",
+      },
+      {
+        title: "Medication and treatment review",
+        note: "Separates high-risk clinical mentions from routine narrative text so review time is spent where it matters.",
+      },
+      {
+        title: "Problem-based note structure",
+        note: "Keeps the generated draft aligned to how clinicians actually scan and finalize documentation.",
+      },
+      {
+        title: "Approval checklist",
+        note: "Makes the human decision visible before anything is finalized or signed.",
+      },
+    ],
+    gallery: [
+      { title: "Draft", note: "AI note arrives with clear review state." },
+      { title: "Risk map", note: "Uncertain content is surfaced first." },
+      { title: "Clinical check", note: "Medication and treatment mentions get focused review." },
+      { title: "Sign-off", note: "Clinician keeps final control." },
+    ],
+  },
   "pro-react-exporter": {
     slug: "pro-react-exporter",
     title: "Pro React Exporter",
