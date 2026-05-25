@@ -19,6 +19,8 @@ const escapeHtml = (value) =>
 const buildPreview = (project) => {
   const accent = project.theme?.accent || "#8b5cf6";
   const accent2 = project.theme?.accent2 || "#3b82f6";
+  const glow = project.theme?.glow || "rgba(139, 92, 246, 0.22)";
+  const panel = project.theme?.panel || "rgba(139, 92, 246, 0.10)";
 
   if (project.track === "Develop") {
     return `
@@ -111,7 +113,7 @@ const buildCard = (project, variant = "experiment") => {
           <p>${summary}</p>
           <div class="lab-card-foot">
             <span>${category}</span>
-            <span class="lab-card-arrow">→</span>
+            <span class="lab-card-arrow">&rarr;</span>
           </div>
         </div>
       </a>
