@@ -18,6 +18,10 @@
   --radius-sm: 14px;
   --shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --project-accent: #8b5cf6;
+  --project-accent-2: #3b82f6;
+  --project-glow: rgba(139, 92, 246, 0.22);
+  --project-panel: rgba(139, 92, 246, 0.10);
 }
 
 * {
@@ -648,12 +652,45 @@ img {
   padding: 34px;
 }
 
+.project-hero-panel {
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-hero-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(460px 200px at 80% 0%, var(--project-glow), transparent 60%),
+    radial-gradient(360px 180px at 10% 100%, rgba(255, 255, 255, 0.03), transparent 62%);
+  pointer-events: none;
+}
+
+.project-hero-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
 .project-hero h1 {
   margin: 0;
   font-size: clamp(44px, 6.5vw, 82px);
   line-height: 0.96;
   letter-spacing: -0.05em;
   max-width: 12ch;
+}
+
+.project-hero .eyebrow .dot {
+  background: var(--project-accent);
+}
+
+.project-hero h1 {
+  color: transparent;
+  background: linear-gradient(90deg, #fff 0%, var(--project-accent) 40%, var(--project-accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .project-detail-grid {
@@ -688,6 +725,28 @@ img {
 
 .project-page .cta-block {
   padding-top: 8px;
+}
+
+.project-page .panel-pill,
+.project-page .status {
+  background: var(--project-panel);
+  border: 1px solid var(--project-accent);
+  color: #efe7ff;
+}
+
+.project-page .btn-primary {
+  background: linear-gradient(180deg, var(--project-accent), var(--project-accent-2));
+  box-shadow: 0 16px 30px -16px var(--project-glow);
+}
+
+.project-page .project-hero-copy {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.project-page .project-hero-panel,
+.project-page .detail-card,
+.project-page .cta-box {
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 1100px) {

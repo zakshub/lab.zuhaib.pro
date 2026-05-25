@@ -3,6 +3,12 @@ window.LAB_PROJECTS = {
     title: "Pro React Exporter",
     status: "Featured",
     category: "Product utility",
+    theme: {
+      accent: "#F59E0B",
+      accent2: "#F97316",
+      glow: "rgba(245, 158, 11, 0.22)",
+      panel: "rgba(245, 158, 11, 0.10)",
+    },
     summary:
       "Converts messy AI-generated code into clean, runnable React projects for faster shipping.",
     problem:
@@ -29,6 +35,12 @@ window.LAB_PROJECTS = {
     title: "FashionOS",
     status: "Launch",
     category: "Fashion AI",
+    theme: {
+      accent: "#E879F9",
+      accent2: "#F43F5E",
+      glow: "rgba(232, 121, 249, 0.22)",
+      panel: "rgba(232, 121, 249, 0.10)",
+    },
     summary:
       "A workflow platform for clothing brands, collection planning, embroidery intelligence, and campaign generation.",
     problem:
@@ -55,6 +67,12 @@ window.LAB_PROJECTS = {
     title: "Boundary Guard",
     status: "Research",
     category: "Relationship design",
+    theme: {
+      accent: "#10B981",
+      accent2: "#14B8A6",
+      glow: "rgba(16, 185, 129, 0.20)",
+      panel: "rgba(16, 185, 129, 0.10)",
+    },
     summary:
       "AI-powered support for boundary setting, reflection, and relationship clarity in digital life.",
     problem:
@@ -81,6 +99,12 @@ window.LAB_PROJECTS = {
     title: "DinoRush",
     status: "Play",
     category: "Game / prototype",
+    theme: {
+      accent: "#38BDF8",
+      accent2: "#8B5CF6",
+      glow: "rgba(56, 189, 248, 0.20)",
+      panel: "rgba(56, 189, 248, 0.10)",
+    },
     summary:
       "A reimagined browser game with mobile-ready output and playful UI direction.",
     problem:
@@ -107,6 +131,12 @@ window.LAB_PROJECTS = {
     title: "AI Comics",
     status: "Archive",
     category: "Creative publishing",
+    theme: {
+      accent: "#FB7185",
+      accent2: "#F59E0B",
+      glow: "rgba(251, 113, 133, 0.20)",
+      panel: "rgba(251, 113, 133, 0.10)",
+    },
     summary:
       "A narrative experiment for daily AI-generated comic pages and original storytelling.",
     problem:
@@ -133,6 +163,12 @@ window.LAB_PROJECTS = {
     title: "New Monthly Concept",
     status: "Next",
     category: "Open slot",
+    theme: {
+      accent: "#A78BFA",
+      accent2: "#60A5FA",
+      glow: "rgba(167, 139, 250, 0.20)",
+      panel: "rgba(167, 139, 250, 0.10)",
+    },
     summary:
       "The next project will come from a real problem, not a random trend.",
     problem:
@@ -156,4 +192,3 @@ window.LAB_PROJECTS = {
     ],
   },
 };
-
