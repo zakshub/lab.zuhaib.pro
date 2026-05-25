@@ -1,8 +1,14 @@
 window.LAB_PROJECTS = {
   "pro-react-exporter": {
+    slug: "pro-react-exporter",
     title: "Pro React Exporter",
     status: "Featured",
-    category: "Product utility",
+    track: "Develop",
+    category: "Developer utility",
+    featured: true,
+    featuredRank: 1,
+    actionLabel: "Try it now",
+    actionNote: "Developer utility",
     theme: {
       accent: "#F59E0B",
       accent2: "#F97316",
@@ -19,22 +25,47 @@ window.LAB_PROJECTS = {
       "A browser-based workflow that exports, cleans, and packages generated code into a structured Vite + React project.",
     outcome:
       "A sharper handoff from AI output to working front-end code, with less time wasted on cleanup.",
-    designNotes: [
-      "Dark terminal-like presentation with amber accents.",
-      "Clear conversion path from paste to download.",
-      "Motion should feel operational, not decorative.",
+    journey: [
+      "Drop in generated code.",
+      "Normalize structure and imports.",
+      "Export a runnable React project.",
+      "Ship faster with less cleanup.",
     ],
-    deliverables: [
-      "Project import",
-      "Code cleanup pipeline",
-      "Exportable archive",
-      "Developer-focused UI",
+    capabilities: [
+      {
+        title: "Project import",
+        note: "Paste AI-generated output and let the tool understand the shape of the code.",
+      },
+      {
+        title: "Code cleanup pipeline",
+        note: "Structure the files, reduce chaos, and make the output easier to maintain.",
+      },
+      {
+        title: "Exportable archive",
+        note: "Package everything into a deliverable that can be run locally or handed off.",
+      },
+      {
+        title: "Developer-focused UI",
+        note: "Stay practical, fast, and visibly useful for people who ship code.",
+      },
+    ],
+    gallery: [
+      { title: "Import", note: "Paste first, organize second." },
+      { title: "Cleanup", note: "Structure gets enforced." },
+      { title: "Bundle", note: "Everything becomes portable." },
+      { title: "Output", note: "Ready to run, easier to extend." },
     ],
   },
-  "fashionos": {
+  fashionos: {
+    slug: "fashionos",
     title: "FashionOS",
     status: "Launch",
+    track: "Create",
     category: "Fashion AI",
+    featured: true,
+    featuredRank: 2,
+    actionLabel: "Learn more",
+    actionNote: "Fashion workflow platform",
     theme: {
       accent: "#E879F9",
       accent2: "#F43F5E",
@@ -51,22 +82,47 @@ window.LAB_PROJECTS = {
       "A modular product that combines line planning, embroidery concepting, brand sensing, and campaign direction in one place.",
     outcome:
       "Faster creative alignment between designers, brand teams, and production stakeholders.",
-    designNotes: [
-      "Editorial luxury feeling with structured cards.",
-      "Use tactile typography and clean spacing.",
-      "Mix premium visuals with practical system thinking.",
+    journey: [
+      "Plan the collection direction.",
+      "Generate embroidery intelligence.",
+      "Shape the campaign story.",
+      "Export on-brand assets for launch.",
     ],
-    deliverables: [
-      "Collection generator",
-      "Embroidery intelligence",
-      "Campaign director",
-      "Brand identity sensing",
+    capabilities: [
+      {
+        title: "Collection generator",
+        note: "Turn the brand direction into structured collection concepts.",
+      },
+      {
+        title: "Embroidery intelligence",
+        note: "Bridge garment thinking with digital embroidery designers.",
+      },
+      {
+        title: "Campaign director",
+        note: "Plan the launch voice and content rhythm with one system.",
+      },
+      {
+        title: "Brand identity sensing",
+        note: "Keep the output aligned to the label rather than generic AI style.",
+      },
+    ],
+    gallery: [
+      { title: "Lookbook", note: "Editorial direction for the collection." },
+      { title: "Material map", note: "Plan the tactile and visual system." },
+      { title: "Campaign board", note: "Move from product to story." },
+      { title: "Launch pack", note: "Export the assets that teams need." },
     ],
   },
   "boundary-guard": {
+    slug: "boundary-guard",
     title: "Boundary Guard",
     status: "Research",
+    track: "Learn",
     category: "Relationship design",
+    featured: true,
+    featuredRank: 3,
+    actionLabel: "Learn more",
+    actionNote: "Reflective support tool",
     theme: {
       accent: "#10B981",
       accent2: "#14B8A6",
@@ -83,22 +139,47 @@ window.LAB_PROJECTS = {
       "A reflective, guided experience that helps users name the issue, compare options, and prepare a response.",
     outcome:
       "More deliberate communication and less emotional blur when difficult conversations happen.",
-    designNotes: [
-      "Calm, reflective, emotionally careful tone.",
-      "Minimal layout with strong reading rhythm.",
-      "Trust-building visuals over hype.",
+    journey: [
+      "Pause and name the tension.",
+      "Structure the conversation.",
+      "Draft a grounded response.",
+      "Review the reflection before sending.",
     ],
-    deliverables: [
-      "Conversation framing",
-      "Boundary prompts",
-      "Reflection flow",
-      "Supportive UX copy",
+    capabilities: [
+      {
+        title: "Conversation framing",
+        note: "Help the user understand the shape of the issue before reacting.",
+      },
+      {
+        title: "Boundary prompts",
+        note: "Guide the user to define what is okay and what is not.",
+      },
+      {
+        title: "Reflection flow",
+        note: "Slow the moment down so the next decision is deliberate.",
+      },
+      {
+        title: "Supportive UX copy",
+        note: "Keep the tone careful, trustworthy, and calm.",
+      },
+    ],
+    gallery: [
+      { title: "Signal", note: "Notice what feels off." },
+      { title: "Frame", note: "Define the boundary clearly." },
+      { title: "Draft", note: "Prepare the response before sending." },
+      { title: "Review", note: "Reflect before the next move." },
     ],
   },
   "dino-rush": {
+    slug: "dino-rush",
     title: "DinoRush",
     status: "Play",
+    track: "Play",
     category: "Game / prototype",
+    featured: true,
+    featuredRank: 4,
+    actionLabel: "Learn more",
+    actionNote: "Game / prototype",
     theme: {
       accent: "#38BDF8",
       accent2: "#8B5CF6",
@@ -115,22 +196,47 @@ window.LAB_PROJECTS = {
       "A browser-first game concept with a sharper visual identity and a mobile-friendly experience.",
     outcome:
       "A playful product that still demonstrates front-end discipline.",
-    designNotes: [
-      "More playful than the serious projects.",
-      "Use motion to amplify energy.",
-      "Keep interaction simple and fast.",
+    journey: [
+      "Open the game.",
+      "Test the controls.",
+      "Move through responsive scenes.",
+      "See how far the motion system can go.",
     ],
-    deliverables: [
-      "Game loop",
-      "Responsive UI",
-      "APK-ready thinking",
-      "Playful motion",
+    capabilities: [
+      {
+        title: "Game loop",
+        note: "Keep the core interaction simple, fast, and repeatable.",
+      },
+      {
+        title: "Responsive UI",
+        note: "The layout has to stay playful on desktop and mobile.",
+      },
+      {
+        title: "APK-ready thinking",
+        note: "Treat it like something that can travel beyond the browser.",
+      },
+      {
+        title: "Playful motion",
+        note: "Let movement carry the energy of the experience.",
+      },
+    ],
+    gallery: [
+      { title: "Start", note: "Lightweight entry into the game." },
+      { title: "Run", note: "Fast response and simple rules." },
+      { title: "Jump", note: "Playful movement and timing." },
+      { title: "Finish", note: "A polished micro-experience." },
     ],
   },
   "ai-comics": {
+    slug: "ai-comics",
     title: "AI Comics",
     status: "Archive",
+    track: "Explore",
     category: "Creative publishing",
+    featured: false,
+    featuredRank: 0,
+    actionLabel: "Learn more",
+    actionNote: "Narrative experiment",
     theme: {
       accent: "#FB7185",
       accent2: "#F59E0B",
@@ -147,22 +253,47 @@ window.LAB_PROJECTS = {
       "A structured comic publishing experiment that pairs generation with story direction and editorial cadence.",
     outcome:
       "A repeatable storytelling medium that can be expanded over time.",
-    designNotes: [
-      "Expressive but organized.",
-      "More editorial than product-like.",
-      "Lean into visual storytelling hierarchy.",
+    journey: [
+      "Generate the page.",
+      "Refine the narrative flow.",
+      "Publish with rhythm.",
+      "Keep the story system consistent.",
     ],
-    deliverables: [
-      "Daily page system",
-      "Story arcs",
-      "Panel rhythm",
-      "Publishing workflow",
+    capabilities: [
+      {
+        title: "Daily page system",
+        note: "Repeat the format without losing personality.",
+      },
+      {
+        title: "Story arcs",
+        note: "Keep the audience anchored inside the larger narrative.",
+      },
+      {
+        title: "Panel rhythm",
+        note: "Use layout as part of the storytelling engine.",
+      },
+      {
+        title: "Publishing workflow",
+        note: "Balance generation with editorial discipline.",
+      },
+    ],
+    gallery: [
+      { title: "Panel one", note: "Set the mood and pacing." },
+      { title: "Panel two", note: "Move the story forward." },
+      { title: "Panel three", note: "Keep the rhythm clean." },
+      { title: "Panel four", note: "End with a clear beat." },
     ],
   },
   "new-concept": {
+    slug: "new-concept",
     title: "New Monthly Concept",
     status: "Next",
+    track: "Create",
     category: "Open slot",
+    featured: false,
+    featuredRank: 0,
+    actionLabel: "Set direction",
+    actionNote: "Open slot",
     theme: {
       accent: "#A78BFA",
       accent2: "#60A5FA",
@@ -179,16 +310,35 @@ window.LAB_PROJECTS = {
       "A problem-led selection process that starts with research and ends with a shippable artifact.",
     outcome:
       "The lab stays relevant, credible, and useful.",
-    designNotes: [
-      "Flexible slot for the next strong idea.",
-      "Can adapt to any category with the same story structure.",
-      "Use as a placeholder for future launches.",
+    journey: [
+      "Start with real signal.",
+      "Shape the problem around a specific user.",
+      "Propose a buildable response.",
+      "Turn the idea into a launchable artifact.",
     ],
-    deliverables: [
-      "Problem intake",
-      "Research notes",
-      "Concept brief",
-      "Prototype plan",
+    capabilities: [
+      {
+        title: "Problem intake",
+        note: "Keep the lab anchored in real friction and actual use cases.",
+      },
+      {
+        title: "Research notes",
+        note: "Capture the signal before the design starts.",
+      },
+      {
+        title: "Concept brief",
+        note: "Turn the problem into a focused plan.",
+      },
+      {
+        title: "Prototype plan",
+        note: "Move from insight to something that can be built.",
+      },
+    ],
+    gallery: [
+      { title: "Signal", note: "What is actually happening?" },
+      { title: "Insight", note: "Why does this matter now?" },
+      { title: "Plan", note: "What would solve it?" },
+      { title: "Build", note: "What becomes the artifact?" },
     ],
   },
 };

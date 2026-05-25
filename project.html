@@ -29,9 +29,10 @@
           </span>
         </a>
         <nav class="nav">
-          <a href="./index.html#work">Work</a>
-          <a href="./index.html#system">System</a>
-          <a href="./index.html#plan">Plan</a>
+          <a href="#overview">Overview</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#access">Access</a>
         </nav>
       </div>
     </header>
@@ -40,79 +41,144 @@
       <section class="project-hero">
         <div class="wrap project-hero-grid">
           <div class="project-hero-copy">
-            <p class="eyebrow" id="project-category">Loading category...</p>
+            <p class="eyebrow" id="project-track">Loading track...</p>
             <h1 id="project-title">Loading project...</h1>
             <p class="lede" id="project-summary"></p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="./index.html#work">Back to lab</a>
-              <a class="btn btn-secondary" href="#details">Scroll details</a>
+              <a class="btn btn-primary" id="project-action-link" href="#access">Explore now</a>
+              <a class="btn btn-secondary" href="./index.html#experiments">Back to lab</a>
+            </div>
+            <div class="hero-meta project-meta">
+              <div>
+                <span class="meta-label">State</span>
+                <strong id="project-status">Loading state...</strong>
+              </div>
+              <div>
+                <span class="meta-label">Category</span>
+                <strong id="project-category">Loading category...</strong>
+              </div>
+              <div>
+                <span class="meta-label">Action</span>
+                <strong id="project-action-label">Loading action...</strong>
+              </div>
             </div>
           </div>
 
           <aside class="project-hero-panel">
             <div class="panel-head">
-              <span class="panel-pill" id="project-status">Status</span>
-              <span class="panel-status">Detail page</span>
+              <span class="panel-pill" id="project-status-pill">Status</span>
+              <span class="panel-status" id="project-action-note">Detail page</span>
             </div>
+            <div id="project-hero-preview" class="project-hero-preview"></div>
             <div class="panel-stack">
               <article class="stat-card">
-                <span>Problem</span>
-                <strong id="project-problem-title">Problem-led design</strong>
-                <p id="project-problem"></p>
+                <span>Journey</span>
+                <strong>How the visitor moves through this page</strong>
+                <p id="project-journey-note"></p>
               </article>
               <article class="stat-card">
-                <span>Insight</span>
-                <strong>Why this matters</strong>
-                <p id="project-insight"></p>
+                <span>Rule</span>
+                <strong>Problem first, proof second</strong>
+                <p>Every section should explain the experiment before it asks for attention.</p>
               </article>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="section" id="details">
-        <div class="wrap project-detail-grid">
-          <article class="detail-card">
-            <p class="kicker">Solution</p>
-            <h2>What the product does</h2>
-            <p id="project-solution"></p>
-          </article>
-
-          <article class="detail-card">
-            <p class="kicker">Outcome</p>
-            <h2>Why it exists</h2>
-            <p id="project-outcome"></p>
-          </article>
-
-          <article class="detail-card">
-            <p class="kicker">Design notes</p>
-            <h2>Visual direction</h2>
-            <ul id="project-design-notes"></ul>
-          </article>
-
-          <article class="detail-card">
-            <p class="kicker">Deliverables</p>
-            <h2>What gets built</h2>
-            <ul id="project-deliverables"></ul>
-          </article>
+      <section class="section project-tabs" aria-label="Project sections">
+        <div class="wrap subnav">
+          <a href="#overview">Overview</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#access">Access</a>
         </div>
       </section>
 
-      <section class="section">
-        <div class="wrap cta-block">
-          <div>
-            <p class="kicker">Next move</p>
-            <h2>Turn this into a live showcase page.</h2>
+      <section class="section" id="overview">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Overview</p>
+              <h2>What the experiment is trying to solve.</h2>
+            </div>
+            <p class="section-copy" id="project-overview-copy"></p>
+          </div>
+
+          <div id="overview-grid" class="overview-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Capabilities</p>
+              <h2>What the product does when you open it.</h2>
+            </div>
             <p class="section-copy">
-              The next step is to convert this narrative into a fully designed
-              launch page with its own motion, visuals, and interactive proof.
+              The page should make the mechanics visible, not hide them behind generic marketing copy.
             </p>
           </div>
-          <div class="cta-box">
-            <p>Current phase</p>
-            <strong>Story structure first, visuals second, automation later.</strong>
-            <span>Every project should stay problem-led and easy to explain.</span>
+
+          <div id="capabilities-grid" class="capabilities-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Gallery</p>
+              <h2>Visual states, captured as a story.</h2>
+            </div>
+            <p class="section-copy">
+              These tiles act like the image/video gallery on a labs page: they show the vibe, the motion, and the product rhythm.
+            </p>
           </div>
+
+          <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="access">
+        <div class="wrap access-grid">
+          <article class="access-card">
+            <p class="kicker">Access</p>
+            <h2>How someone should approach this experiment.</h2>
+            <p id="project-access-copy" class="section-copy"></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" id="project-secondary-action" href="./index.html#experiments">Continue browsing</a>
+              <a class="btn btn-secondary" href="./index.html#about">Read the lab rules</a>
+            </div>
+          </article>
+
+          <aside class="access-side">
+            <article class="access-panel">
+              <span class="panel-label">Journey</span>
+              <div id="journey-list" class="journey-list"></div>
+            </article>
+            <article class="access-panel">
+              <span class="panel-label">Current state</span>
+              <p id="project-access-note"></p>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="related">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Related work</p>
+              <h2>Other experiments worth opening next.</h2>
+            </div>
+            <p class="section-copy">
+              A curated lab should make the next click obvious.
+            </p>
+          </div>
+
+          <div id="related-grid" class="related-grid"></div>
         </div>
       </section>
     </main>
